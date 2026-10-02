@@ -1,13 +1,15 @@
 ---
 layout: page
 title: TAVO
-description: Selecting useful external cases for cross-center tumor segmentation under a source-data budget.
+description: Learning which training examples are useful for a target domain under a fixed data budget.
 img:
 importance: 2
 category: research
 ---
 
-**Target-Aware Source Curation for Budgeted Cross-Center Tumor Segmentation**
+**Learning which data is worth using**
+
+TAVO studies training-data selection under distribution shift: which examples should a learner use when it cannot train on everything? The framework learns a selection strategy for each target domain and data budget, evaluated on cross-center tumor segmentation and a cross-task classification control.
 
 **Role:** First author, USC; advisor: Prof. Ruishan Liu.<br>
 **Status:** Manuscript under review.
@@ -18,7 +20,7 @@ A new clinical center may have only a small labeled dataset, alongside a much la
 
 ## The approach
 
-**Target-Aware Valuation Optimization (TAVO)** curates the training set before segmentation training. It combines complementary signals for target similarity, gradient compatibility, source coverage, and diversity.
+**Target-Aware Valuation Optimization (TAVO)** curates the training set before segmentation training. It combines eight complementary signals for target similarity, gradient compatibility, source coverage, and diversity.
 
 - A shared warm-up model provides representations and gradients for case-level source rankings.
 - Rank normalization puts heterogeneous scores on a common scale.

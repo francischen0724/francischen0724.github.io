@@ -8,11 +8,11 @@ middle_name:
 last_name: Chen
 contact_note:
 description: >
-  Xiwen Chen: agentic AI, data-centric learning, and healthcare optimization. M.S. in Computer Science (AI), USC.
+  Xiwen Chen: ML researcher and engineer studying how intelligent systems allocate limited data and computation through agentic AI, data-centric learning, evaluation, and optimization.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Xiwen Chen, agentic AI, data-centric learning, medical imaging, radiotherapy optimization, RadOncGym, TAVO, TAC
+keywords: Xiwen Chen, machine learning, research engineering, agentic AI, data-centric ML, evaluation, optimization, ML systems, RadOncGym, TAVO, TAC
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

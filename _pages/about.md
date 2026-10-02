@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Agentic AI, Data-Centric Learning & Healthcare Optimization | M.S. Computer Science, USC
+subtitle: Agentic AI, Data-Centric ML & Reliable Evaluation
 
 profile: false
 selected_papers: true
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: false
   limit: 3
 
@@ -19,16 +19,20 @@ latest_posts:
   limit: 3
 ---
 
-I build AI systems that make better use of limited data and computation. My work spans agentic optimization, data-centric learning, and medical imaging, with a focus on how models select training data, use feedback, and make decisions under a fixed budget.
+I build AI systems that make better use of limited data and computation. As an ML researcher and engineer, I study how intelligent systems allocate these resources through agentic optimization, data-centric learning, and rigorous evaluation. One question connects my work:
 
-I earned my M.S. in Computer Science, on the Artificial Intelligence track, from the University of Southern California in May 2026. At USC's Lab for ML, Health and Biomedicine, I work with Prof. Ruishan Liu and lead the development of [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}), an agent environment for radiotherapy dose-mimicking optimization. It lets agents adjust planning objectives, learn from fast surrogate feedback, and decide when an expensive full optimization is worth the cost.
+**Which data is most useful, and when is expensive computation actually worth it?**
 
-Previously, I led two first-author projects on cross-center medical image segmentation: [TAVO]({{ '/projects/tavo/' | relative_url }}), which selects useful external training cases for a target center, and [TAC]({{ '/projects/tac/' | relative_url }}), which couples target-label acquisition with source-data curation. Across these projects, I build reproducible training and evaluation pipelines to study data selection under label scarcity and distribution shift.
+At USC's Lab for ML, Health and Biomedicine, advised by Prof. Ruishan Liu, I lead [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}): an agentic optimization environment for studying decisions under expensive feedback. Using radiotherapy planning as a testbed, I evaluate how agents use memory, coordinate roles, and allocate full optimization calls across **600 patient-prediction contexts**.
 
-My engineering experience includes multilingual speech synthesis and audio-data pipelines at 2 Cube Global, as well as distributed storage, erasure coding, and performance evaluation at Xiaomi. I work primarily with Python, PyTorch, Gymnasium, Gurobi, and Linux/CUDA systems, connecting research ideas with reliable experimentation and implementation.
+I also led two first-author projects on learning under distribution shift. [TAVO]({{ '/projects/tavo/' | relative_url }}) learns target- and budget-specific strategies for selecting useful training data. [TAC]({{ '/projects/tac/' | relative_url }}) connects active target-label acquisition with source-data curation. Both ask how carefully chosen data can improve generalization when labels and training budgets are limited.
 
-I am seeking Machine Learning Engineer and Applied Scientist opportunities in agentic AI, applied ML, healthcare AI, and data-centric learning, and I am open to relocation. You can find my experience in my [CV]({{ '/cv/' | relative_url }}) or reach me at [xiwenc@usc.edu](mailto:xiwenc@usc.edu).
+My work spans healthcare AI and cross-domain vision, alongside engineering experience in multilingual speech systems at 2 Cube Global and distributed storage at Xiaomi. Across these settings, I build reproducible pipelines, evaluate trade-offs, and investigate failure modes. I earned my M.S. in Computer Science (Artificial Intelligence) from USC in May 2026.
+
+I am exploring **Machine Learning Engineer, Research Engineer, and Applied Scientist** opportunities in agentic AI, data-centric ML, ML systems, and healthcare AI. I am open to relocation.
+
+[CV]({{ '/cv/' | relative_url }}) · [GitHub](https://github.com/francischen0724) · [LinkedIn](https://www.linkedin.com/in/xiwen-chen-franciscxw/) · [Email](mailto:xiwenc@usc.edu)
 
 ## Research Interests
 
-Agentic AI and evaluation; budget-aware optimization; data valuation and training-data curation; active learning; cross-domain medical image segmentation.
+Agentic AI & evaluation · Data-centric ML · Training-data curation · Budget-aware optimization · Active learning · Domain generalization · Healthcare AI

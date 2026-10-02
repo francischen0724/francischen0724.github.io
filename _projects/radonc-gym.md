@@ -1,16 +1,18 @@
 ---
 layout: page
 title: RadOncGym
-description: Agents that tune radiotherapy planning objectives under a limited optimization budget.
+description: Studying how agents allocate expensive evaluations under a fixed computation budget.
 img:
 importance: 1
 category: research
 ---
 
-**An Agent-Based Framework for Radiotherapy Dose-Mimicking Optimization**
+**Agentic optimization under expensive feedback**
+
+When feedback is expensive, an agent must decide both what to try and when a more reliable evaluation is worth the cost. RadOncGym studies this decision using radiotherapy dose-mimicking optimization as a testbed, with controlled comparisons of agent behavior, memory, and evaluation budgets.
 
 **Role:** Research lead and first author, Lab for ML, Health and Biomedicine, USC.<br>
-**Status:** Manuscript under review, WACV 2027.
+**Status:** Manuscript under review, WACV 2027. See [Publications]({{ '/publications/' | relative_url }}) for the full manuscript title.
 
 ## The problem
 

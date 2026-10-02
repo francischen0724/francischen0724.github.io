@@ -9,7 +9,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-Selected manuscripts and publications. I will add public PDFs, code, and project pages here as they become available.
+Research manuscripts and publications. For methods, experiments, and engineering contributions, see [Projects]({{ '/projects/' | relative_url }}).
 
 <!-- Bibsearch Feature -->
 
