@@ -1,33 +1,45 @@
 ---
 ---
 
+@article{chen2026radoncgym,
+  abbr        = {Under Review},
+  title       = {{RadOncGym}: An Agent-Based Framework for Radiotherapy Dose-Mimicking Optimization},
+  author      = {Chen, Xiwen and others},
+  journal     = {Manuscript under review, WACV 2027},
+  year        = {2026},
+  selected    = {true},
+  bibtex_show = {false},
+  website     = {/projects/radonc-gym/},
+  abstract    = {RadOncGym is an agent environment for radiotherapy dose-mimicking optimization. Agents tune 12 planning-objective weights, use rapid surrogate feedback, and selectively request full Gurobi solves under a fixed budget. The evaluation spans 60 patients and 10 dose predictions per patient, yielding 600 contexts, and compares agent memory and role structures with numerical optimization methods.}
+}
+
 @article{chen2026tavo,
   abbr        = {Under Review},
-  title       = {Target-Aware Adaptive Multi-Criteria Data Valuation for Budgeted Cross-Domain Medical Image Segmentation},
+  title       = {{TAVO}: Target-Aware Source Curation for Budgeted Cross-Center Tumor Segmentation},
   author      = {Chen, Xiwen and Liu, Ruishan},
   journal     = {Manuscript under review},
   year        = {2026},
   selected    = {true},
   bibtex_show = {true},
   website     = {/projects/tavo/},
-  abstract    = {A target-aware data valuation framework for budgeted source curation under target-domain distribution shift. TAVO fuses multiple feature- and gradient-based valuation signals through surrogate-guided optimization to select compact training subsets under fixed training budgets.}
+  abstract    = {Target-Aware Valuation Optimization combines target similarity, gradient compatibility, source coverage, and diversity to select a budgeted set of external training cases. Rank normalization and validation-guided search adapt the combination to each target and budget, leaving the segmentation architecture, loss, and inference procedure unchanged. Evaluation covers eight held-out targets on BraTS 2021 and MAMA-MIA, with OfficeHome as a cross-task control.}
 }
 
 @article{chen2026tac,
   abbr        = {Under Review},
-  title       = {Target-Anchored Coverage for Annotation-Efficient Cross-Domain Medical Image Segmentation},
+  title       = {Target-Anchored Coverage for Source--Target Curation in Cross-Center Medical Image Segmentation},
   author      = {Chen, Xiwen and Liu, Ruishan},
-  journal     = {Manuscript under review},
+  journal     = {Manuscript under review, NeurIPS 2026},
   year        = {2026},
   selected    = {true},
   bibtex_show = {true},
   website     = {/projects/tac/},
-  abstract    = {An annotation-efficient source-target curation method that couples active target acquisition with source selection. Queried target labels act as reliability anchors for constructing compact, target-aligned source subsets.}
+  abstract    = {Target-Anchored Coverage couples active target-label acquisition with source-data curation for cross-center medical image segmentation. Queried target labels serve as reliability anchors for constructing compact, target-aligned source subsets under annotation constraints and distribution shift.}
 }
 
 @article{hou2022stroke,
   abbr        = {JIFS},
-  title       = {A Stroke Image Recognition Model Based on 3D Residual Network and Attention Mechanism},
+  title       = {{RETRACTED}: A Stroke Image Recognition Model Based on 3D Residual Network and Attention Mechanism},
   author      = {Hou, Yingan and Su, Junguang and Liang, Jun and Chen, Xiwen and Liu, Qin and Deng, Liang and Liao, Jiyuan},
   journal     = {Journal of Intelligent \& Fuzzy Systems},
   volume      = {43},
@@ -38,5 +50,5 @@
   html        = {https://journals.sagepub.com/doi/10.3233/JIFS-212511},
   selected    = {false},
   bibtex_show = {true},
-  abstract    = {Undergraduate research contribution. I worked on CT-sequence preprocessing and PyTorch training/evaluation experiments for stroke image recognition. The article was later retracted by the publisher due to issues outside my contribution.}
+  abstract    = {Undergraduate research contribution as fourth author, including CT-sequence preprocessing and PyTorch training and evaluation experiments for stroke image recognition. This article has since been retracted by the publisher.}
 }

@@ -2,33 +2,32 @@
 layout: page
 title: projects
 permalink: /projects/
-description: research projects and applied machine learning systems.
+description: agentic optimization, training-data curation, and medical imaging.
 nav: true
 nav_order: 3
 ---
 
-<div class="projects">
-  <div class="card mt-3 p-3">
-    <h4><a href="{{ '/projects/tavo/' | relative_url }}">TAVO: Target-Aware Adaptive Data Valuation</a></h4>
-    <p>
-      A data-centric AI framework for budgeted cross-domain medical image segmentation. TAVO addresses unstable single-criterion source selection by combining feature- and gradient-based valuation signals through surrogate-guided optimization.
-    </p>
-    <p class="mb-0"><strong>Keywords:</strong> data valuation, source curation, domain adaptation, medical image segmentation, PyTorch, MONAI.</p>
-  </div>
+My research asks how AI systems can use limited data and computation more effectively, from selecting training examples to allocating expensive optimization calls.
 
-  <div class="card mt-3 p-3">
-    <h4><a href="{{ '/projects/tac/' | relative_url }}">TAC: Target-Anchored Coverage</a></h4>
-    <p>
-      An annotation-efficient source-target curation method for cross-domain learning. TAC uses actively queried target labels as reliability anchors for compact, target-aligned source subset construction.
-    </p>
-    <p class="mb-0"><strong>Keywords:</strong> active learning, target labels, source selection, label scarcity, distribution shift.</p>
-  </div>
+## [RadOncGym: Agentic Radiotherapy Optimization]({{ '/projects/radonc-gym/' | relative_url }})
 
-  <div class="card mt-3 p-3">
-    <h4><a href="{{ '/projects/radonc-gym/' | relative_url }}">RadOnc-Gym: Cost-Aware Agentic Planning for Radiotherapy</a></h4>
-    <p>
-      A Gym-style LLM/RL planning environment for radiotherapy optimization. Agents iteratively adjust clinical objectives while trading off surrogate scoring against expensive Gurobi re-optimization and DVH/clinical-score verification calls.
-    </p>
-    <p class="mb-0"><strong>Keywords:</strong> agentic AI, reinforcement learning, radiotherapy planning, Gurobi, surrogate verification.</p>
-  </div>
-</div>
+An agent environment for tuning 12 radiotherapy planning-objective weights. Agents combine fast surrogate feedback with selectively requested full Gurobi solves. Evaluated across 600 patient-prediction contexts, the framework supports controlled comparisons of agent memory, role structures, and numerical optimizers.
+
+**Focus:** LLM agents, multi-fidelity optimization, evaluation, and radiotherapy planning.<br>
+**Role:** Research lead and first author.
+
+## [TAVO: Target-Aware Source Curation]({{ '/projects/tavo/' | relative_url }})
+
+A training-data curation framework that combines target similarity, gradient compatibility, coverage, and diversity to select useful external cases for a target clinical center. Tested across eight held-out targets in brain and breast tumor segmentation, with no change to the downstream model or inference procedure.
+
+**Focus:** Data valuation, domain shift, budget-aware selection, and medical image segmentation.<br>
+**Role:** First author.
+
+## [TAC: Target-Anchored Coverage]({{ '/projects/tac/' | relative_url }})
+
+A source-target curation method that couples active target-label acquisition with source-data selection. Newly queried target labels guide the construction of compact training subsets under annotation constraints and cross-center distribution shift.
+
+**Focus:** Active learning, source-target curation, and annotation-efficient learning.<br>
+**Role:** First author.
+
+For my work on speech-data pipelines and distributed systems, see my [CV]({{ '/cv/' | relative_url }}).
