@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am building RadOnc-Gym, a cost-aware agentic planning environment for radiotherapy optimization.
+I am building RadOncGym, a cost-aware agentic planning environment for radiotherapy optimization.
