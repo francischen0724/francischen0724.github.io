@@ -1,0 +1,50 @@
+[
+  {
+    "id": "svrd",
+    "type": "Manuscript",
+    "title": "Distilling Small Vision Language Models with Structured Reasoning",
+    "authors": ["Xiwen Chen", "Hongbin Dong", "Jinbo Liu", "Yanqing Lu", "Ruitao Mao"],
+    "status": "Research project manuscript",
+    "pdf": "/assets/pdf/manuscripts/svrd.pdf",
+    "code": "https://github.com/yqlu1015/vllm_distillation",
+    "code_private": false
+  },
+  {
+    "id": "compact-vision-transformer",
+    "type": "Report",
+    "title": "Implementation of Fast and Compact Vision Transformer From Scratch",
+    "authors": ["Penghao Zhang", "Xiwen Chen", "Zhihan Xu", "Wenyang Yao"],
+    "status": "CSCI 567 Machine Learning · Course project report · Fall 2024",
+    "note": "Equal contribution.",
+    "pdf": "/assets/pdf/manuscripts/compact-vision-transformer.pdf",
+    "code": "https://github.com/francischen0724/Image-classification-by-CVT-based-on-Vit-from-scratch",
+    "code_private": true
+  },
+  {
+    "id": "fashion-production-midterm",
+    "type": "Report",
+    "title": "ZeroWasteFashionAI: AI-Driven Fashion Production",
+    "authors": ["Uraaz Gorimar", "Aaditya Patil", "Faraaz Rahman", "Yash Patel", "Xiwen Chen"],
+    "status": "Course project manuscript",
+    "pdf": "/assets/pdf/manuscripts/fashion-production-midterm.pdf",
+    "code": "https://github.com/faraaz-usc/ZeroWasteFashionAI",
+    "code_private": true
+  },
+  {
+    "id": "online-linear-optimization-survey",
+    "type": "Survey",
+    "title": "Computing Optimal Regularizers for Online Linear Optimization",
+    "authors": ["Xiwen Chen", "Xinjie Chen", "Shupeng Cheng"],
+    "status": "CSCI 659 Online Optimization · Literature review",
+    "note": "A survey of the work by Gatmiry, Schneider, and Jegelka on optimal regularizers for online linear optimization.",
+    "pdf": "/assets/pdf/manuscripts/online-linear-optimization-survey.pdf"
+  },
+  {
+    "id": "ai-radiation-medicine-chapter",
+    "type": "Book Chapter",
+    "title": "Smarter Medicine: How AI is Transforming Radiation Treatment",
+    "status": "Book chapter manuscript · Ready to publish",
+    "note": "A chapter on AI in radiation medicine, written for a publication on artificial intelligence in healthcare and medicine.",
+    "pdf": "/assets/pdf/manuscripts/ai-radiation-medicine-chapter.pdf"
+  }
+]

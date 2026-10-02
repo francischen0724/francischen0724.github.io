@@ -12,7 +12,7 @@ category: research
 TAVO studies training-data selection under distribution shift: which examples should a learner use when it cannot train on everything? The framework learns a selection strategy for each target domain and data budget, evaluated on cross-center tumor segmentation and a cross-task classification control.
 
 **Role:** First author, USC; advisor: Prof. Ruishan Liu.<br>
-**Status:** Manuscript under review.
+**Status:** Manuscript under review at AAAI 2027. The anonymous repo is not available during peer review.
 
 ## The problem
 
@@ -33,16 +33,14 @@ The selected cases can be used without changing the segmentation architecture, t
 
 The study covers **eight held-out target centers or domains** across **BraTS 2021** brain tumor segmentation and **MAMA-MIA** breast tumor segmentation. EfficientViT and nnU-Net provide the medical segmentation backbones; OfficeHome serves as a cross-task classification control.
 
-At a **150-case source budget**, the manuscript reports:
+Across held-out targets at a **12% source-data budget**, the results summarized in my [CV]({{ '/cv/' | relative_url }}) are:
 
-| Target-averaged result                                 |  BraTS 2021 |    MAMA-MIA |
-| ------------------------------------------------------ | ----------: | ----------: |
-| Dice score                                             |        77.9 |        71.4 |
-| Gain over strongest fixed selector                     | +1.0 points | +1.9 points |
-| Gain over strongest budget-matched adaptation baseline | +1.0 points | +2.2 points |
-| Gain over Target + Full Source                         | +2.9 points | +2.0 points |
+| Comparison                  | Dice improvement |
+| --------------------------- | ---------------: |
+| Fixed-selector baselines    |      +1.9 points |
+| Domain-adaptation baselines |      +2.2 points |
 
-TAVO ranks first on five targets and second on the remaining three at this budget. The source budget applies to candidate and final training; the one-time warm-up and evidence extraction still access the full source pool. This distinction matters when comparing training-set size with total development cost.
+The source budget applies to candidate and final training; the one-time warm-up and evidence extraction still access the full source pool. Selection also requires proxy-training runs, so reducing the final training set does not by itself establish a reduction in total development compute. Once the subset is fixed, the method adds no inference-time overhead.
 
 **My work:** Method design, source-target split construction, selection and adaptation baselines, multi-budget experiments, backbone validation, and reproducible training and analysis pipelines.
 

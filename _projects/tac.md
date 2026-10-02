@@ -12,7 +12,7 @@ category: research
 TAC studies how limited target supervision can guide both annotation decisions and training-set composition. It connects active learning with source-data curation, using cross-center medical image segmentation to evaluate learning under distribution shift.
 
 **Role:** First author, USC; advisor: Prof. Ruishan Liu.<br>
-**Status:** Manuscript under review, NeurIPS 2026.
+**Status:** Manuscript under review at NeurIPS 2026. The anonymous repo is not available during peer review.
 
 ## The problem
 
@@ -23,6 +23,8 @@ Under a limited annotation budget, a learner must decide which target examples t
 **Target-Anchored Coverage (TAC)** couples active target acquisition with source selection. Queried target labels become reliability anchors for constructing compact, target-aligned source subsets. The aim is to use limited target supervision to improve both the target evidence available to the learner and the composition of its source training data.
 
 TAC complements [TAVO]({{ '/projects/tavo/' | relative_url }}): TAVO uses a fixed labeled target support set to rank source cases, while TAC studies how target acquisition and source curation can work together.
+
+The workflow first selects target cases for annotation, then uses their labels to assess source reliability through representation similarity and gradient agreement. Target-anchored coverage expands the selected subset into relevant source regions, while redundancy control limits repetitive examples. The resulting source subset and acquired target cases feed the same downstream segmentation architecture, loss, and inference procedure used by the comparison methods.
 
 ## Results
 

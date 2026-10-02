@@ -12,7 +12,7 @@ category: research
 When feedback is expensive, an agent must decide both what to try and when a more reliable evaluation is worth the cost. RadOncGym studies this decision using radiotherapy dose-mimicking optimization as a testbed, with controlled comparisons of agent behavior, memory, and evaluation budgets.
 
 **Role:** Research lead and first author, Lab for ML, Health and Biomedicine, USC.<br>
-**Status:** Manuscript under review, WACV 2027. See [Publications]({{ '/publications/' | relative_url }}) for the full manuscript title.
+**Status:** Manuscript under review at WACV 2027. The anonymous repo is not available during peer review. See [Publications]({{ '/publications/' | relative_url }}) for the full manuscript title.
 
 ## The problem
 
@@ -33,17 +33,21 @@ The evaluation framework compares **nine memory-role configurations**: three mem
 
 ## Evaluation and results
 
-The manuscript evaluates **60 OpenKBP patients paired with 10 dose predictions each**, giving **600 patient-prediction contexts** per configuration. The primary setting allows **16 turns and three full planning solves**.
+The benchmark covers **600 contexts**, comparing **three frontier LLMs and one locally deployed open-source LLM** with black-box optimization policies. Evaluation spans objective quality, expensive-call usage, agent trajectories, and failure modes.
 
-Under this setting, the GPT-5.6 Sol configuration with criterion-response contrast memory and a candidate critic achieves the following mean improvements over the context-matched plan with all weights set to one:
+The benchmark results summarized in my [CV]({{ '/cv/' | relative_url }}) are:
 
-| Endpoint                          |          Improvement |
-| --------------------------------- | -------------------: |
-| Mean clinical-criterion violation |   0.613 Gy reduction |
-| DVH score                         | 0.599 Gy improvement |
-| Dose score                        | 0.220 Gy improvement |
+| Measure                                  | Result |
+| ---------------------------------------- | -----: |
+| Reduction in full evaluations            |    81% |
+| Downstream objective gains retained      |    95% |
+| Memory and role configurations evaluated |      9 |
 
-It outperforms the evaluated non-agent methods under the matched three-solve, 16-turn protocol, and remains competitive with their 16-solve variants while using **75.0-77.6% less runtime**. These are benchmark planning results; the comparison depends on the solve and turn budgets. The experiments also isolate the effects of solve timing, feedback content, and agent memory and roles.
+These results use matched compute budgets. The evaluation studies how memory design, planner/evaluator/critic roles, and access to expensive feedback affect decision quality. The surrogate supplies approximate screening feedback; final candidate selection uses successful full solves. The reported outcomes concern benchmark optimization, rather than clinical deployment.
+
+## My contribution
+
+I lead the environment and evaluation framework: modular action/state interfaces, budget-aware experiment orchestration, multi-fidelity feedback, reproducible trajectory logging, and end-to-end model evaluation. I also implement and compare memory and role configurations to examine where agent decisions succeed or fail.
 
 **Stack:** Python, Gymnasium, Gurobi, scikit-learn, LLM agents, surrogate modeling, and reproducible evaluation pipelines.
 
