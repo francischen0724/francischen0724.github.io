@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Announcement_2 | Xiwen Chen </title> <meta name="author" content="Xiwen Chen"> <meta name="description" content="Personal academic homepage of Xiwen Chen. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Announcement_2 | Xiwen Chen </title> <meta name="author" content="Xiwen Chen"> <meta name="description" content="Xiwen Chen: ML researcher and engineer studying how intelligent systems allocate limited data and computation through agentic AI, data-centric learning, evaluation, and optimization. "> <meta name="keywords" content="Xiwen Chen, machine learning, research engineering, agentic AI, data-centric ML, evaluation, optimization, ML systems, RadOncGym, TAVO, TAC"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
@@ -24,21 +24,21 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "selected manuscripts and publications.",
+          description: "research publications, manuscripts, and technical reports.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "research projects and applied machine learning systems.",
+          description: "agentic systems, data-centric learning, multimodal AI, and optimization under limited resources.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "latest resume.",
+          description: "curriculum vitae.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -54,24 +54,34 @@ ninja.data = [{
           section: "News",},{id: "news-started-research-on-cost-aware-llm-rl-planning-for-radiotherapy-with-the-lab-for-ml-health-and-biomedicine-at-usc",
           title: 'Started research on cost-aware LLM/RL planning for radiotherapy with the Lab for ML,...',
           description: "",
-          section: "News",},{id: "news-i-am-building-radonc-gym-a-cost-aware-agentic-planning-environment-for-radiotherapy-optimization",
-          title: 'I am building RadOnc-Gym, a cost-aware agentic planning environment for radiotherapy optimization.',
+          section: "News",},{id: "news-i-am-building-radoncgym-a-cost-aware-agentic-planning-environment-for-radiotherapy-optimization",
+          title: 'I am building RadOncGym, a cost-aware agentic planning environment for radiotherapy optimization.',
           description: "",
-          section: "News",},{id: "projects-radonc-gym",
-          title: 'RadOnc-Gym',
-          description: "Cost-aware agentic planning environment for radiotherapy optimization.",
+          section: "News",},{id: "projects-radoncgym",
+          title: 'RadOncGym',
+          description: "Studying how agents allocate expensive evaluations under a fixed computation budget.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/radonc-gym/";
             },},{id: "projects-tac",
           title: 'TAC',
-          description: "Target-anchored coverage for annotation-efficient cross-domain learning.",
+          description: "Connecting target-label acquisition with source-data selection under annotation constraints.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tac/";
             },},{id: "projects-tavo",
           title: 'TAVO',
-          description: "Target-aware adaptive data valuation for budgeted cross-domain medical image segmentation.",
+          description: "Learning which training examples are useful for a target domain under a fixed data budget.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tavo/";
+            },},{id: "projects-vlm-distillation",
+          title: 'VLM Distillation',
+          description: "Transferring structured visual reasoning from an 11B teacher to a 2B student.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vlm-distillation/";
+            },},{id: "projects-zerowastefashionai",
+          title: 'ZeroWasteFashionAI',
+          description: "A sketch-to-garment prototype combining computer vision, multimodal understanding, and pattern-layout optimization.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/zero-waste-fashion/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
