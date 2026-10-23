@@ -4,10 +4,12 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-description: curriculum vitae.
+description: current curriculum vitae, updated October 2026.
 ---
 
-[Download CV (PDF)]({{ '/assets/pdf/cv.pdf' | relative_url }})
+<a href="{{ '/assets/pdf/cv.pdf' | relative_url }}" class="btn btn-sm z-depth-0" download="Xiwen_Chen_CV.pdf">Download CV (PDF)</a>
+
+Updated October 2026. For a web overview, see [Experience]({{ '/experience/' | relative_url }}) and [Publications]({{ '/publications/' | relative_url }}).
 
 <iframe
   title="Xiwen Chen's curriculum vitae"
