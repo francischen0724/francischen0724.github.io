@@ -32,19 +32,19 @@ latest_posts:
   >
 </figure>
 
-I build AI systems that connect research with reliable software. My work spans **agentic AI, full-stack engineering, and data-centric machine learning**, with a focus on how systems use limited data and computation. One question connects much of my work:
+I build AI systems that make better use of limited data and computation, turning research ideas into reliable software. My work spans **agentic AI, data-centric machine learning, computer vision, and production engineering**. One question connects much of my work:
 
 **Which data is most useful, and when is expensive computation actually worth it?**
 
-I am currently a **Software Engineer at EGUOO Wellness**, building a [full-stack AI wellness platform]({{ '/projects/eguoo-wellness/' | relative_url }}) with Next.js, FastAPI, PostgreSQL, and AWS. I architected a stateful LangGraph agent that combines visual label extraction, evidence-grounded retrieval, and recommendations that respect user constraints. Across 60+ held-out scenarios, the system improved constraint-valid recommendation success from **71% to 95%** while reducing inference cost per successful task by **35%**.
+At USC's Lab for ML, Health and Biomedicine, advised by Prof. Ruishan Liu, I led research exploring both sides of this question. [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}) studies how agents decide when expensive computation is worth the cost, reducing full evaluations by **81%** while retaining **95%** of optimization gains in our benchmarks. [TAVO]({{ '/projects/tavo/' | relative_url }}) and [TAC]({{ '/projects/tac/' | relative_url }}) investigate which source examples to select and which target samples to label under distribution shift. With just **12% of the available source data**, TAVO outperformed the strongest fixed-selection baseline. Two first-author papers on RadOncGym and TAVO were accepted at **WACV 2027**.
 
-At USC's Lab for ML, Health and Biomedicine, advised by Prof. Ruishan Liu, I led development of [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}), an agentic optimization framework evaluated across **600 patient-prediction contexts**. I also led [TAVO]({{ '/projects/tavo/' | relative_url }}), which learns which source examples are most useful for a target domain under a fixed training budget. **Both papers are accepted to WACV 2027**, with me as a co-first author; their camera-ready PDFs and code are now available.
+I bring that same focus on reliability and efficiency into production AI at **EGUOO Wellness**, where I built a stateful LangGraph agent combining visual information extraction, evidence-grounded retrieval, and personalized recommendations. Across 60+ held-out scenarios, the system improved valid recommendation success from **71% to 95%** while reducing inference cost per successful task by **35%**.
 
-[TAC]({{ '/projects/tac/' | relative_url }}), my first-author work on joint target-label acquisition and source-data curation, is **under review at ICLR 2027**. My broader projects include [reasoning distillation for small vision-language models]({{ '/projects/vlm-distillation/' | relative_url }}) and [ZeroWasteFashionAI]({{ '/projects/zero-waste-fashion/' | relative_url }}), a sketch-to-garment prototype combining computer vision, multimodal understanding, and pattern-layout optimization.
+Previously, at **2 Cube Global**, I applied data-curation ideas from TAVO to real-world speech ML pipelines, processing 80+ hours of audio into 45K aligned utterances for model adaptation and evaluation. At **Xiaomi**, I worked on distributed storage and performance optimization across a 60-node Linux environment, gaining hands-on experience with large-scale data infrastructure.
 
-Previously, I worked on multilingual TTS adaptation and speech-data pipelines at **2 Cube Global**, and distributed-storage reliability and performance at **Xiaomi**. I earned my **M.S. in Computer Science (Artificial Intelligence) from USC in May 2026**. See [Experience]({{ '/experience/' | relative_url }}) for my roles, education, and technical background.
+Beyond my core research, I've explored [reasoning distillation for compact vision-language models]({{ '/projects/vlm-distillation/' | relative_url }}) and co-developed [ZeroWasteFashionAI]({{ '/projects/zero-waste-fashion/' | relative_url }}), a sketch-to-garment prototype combining computer vision, multimodal understanding, and optimization.
 
-I am seeking **Machine Learning Engineer, Research Engineer, and Applied Scientist** opportunities in agentic AI, multimodal learning, data-centric ML, and ML systems, including healthcare applications. I am open to relocation.
+I earned my **M.S. in Computer Science (Artificial Intelligence) from USC in May 2026**. I'm seeking **Machine Learning Engineer, Research Engineer, and Applied Scientist** opportunities in agentic AI, multimodal learning, data-centric ML, and ML systems. I'm open to relocation.
 
 [CV (PDF)]({{ '/assets/pdf/cv.pdf' | relative_url }}) · [GitHub](https://github.com/francischen0724) · [LinkedIn](https://www.linkedin.com/in/xiwen-chen-franciscxw/) · [Email](mailto:xiwenc@usc.edu)
 
