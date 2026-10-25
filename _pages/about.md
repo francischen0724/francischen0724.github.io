@@ -44,6 +44,8 @@ At **EGUOO Wellness**, I brought that same focus on reliability and efficiency i
 
 Previously, I applied data-curation ideas to speech ML pipelines at [**2 Cube Global**]({{ '/projects/2-cube-speech-ai/' | relative_url }}) and worked on distributed-storage performance and reliability across a **60-node Linux environment** at [**Xiaomi**]({{ '/projects/xiaomi-storage/' | relative_url }}).
 
+**Actively seeking Machine Learning Engineer, Research Engineer, and Applied Scientist roles.**
+
 ## Research Interests
 
 Agentic AI & evaluation · Data-centric ML · Multimodal learning & distillation · Budget-aware optimization · Active learning · Learning under distribution shift
