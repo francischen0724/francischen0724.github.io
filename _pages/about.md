@@ -36,7 +36,7 @@ latest_posts:
 
 I build AI systems that make better use of limited data and computation, turning research ideas into reliable software. My work spans **agentic AI, data-centric ML, computer vision, and production engineering**. One question connects much of my work:
 
-**Which data is most useful, and when is expensive computation actually worth it?**
+<strong style="color: #e53935; font-weight: 700;">Which data is most useful, and when is expensive computation actually worth it?</strong>
 
 At USC, advised by [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/), I led two research directions. [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}) explores when agents should use costly evaluations, reducing full evaluations by **81%** while retaining **95%** of optimization gains. [TAVO]({{ '/projects/tavo/' | relative_url }}) and [TAC]({{ '/projects/tac/' | relative_url }}) focus on data selection and generalization under distribution shift, with TAVO outperforming the strongest fixed-selection baseline using just **12% of source data**. My work on RadOncGym and TAVO resulted in **two first-author papers accepted at WACV 2027**.
 
