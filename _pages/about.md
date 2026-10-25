@@ -38,13 +38,11 @@ I build AI systems that make better use of limited data and computation, turning
 
 **Which data is most useful, and when is expensive computation actually worth it?**
 
-At USC, advised by Prof. Ruishan Liu, I led two research directions. [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}) explores when agents should use costly evaluations, reducing full evaluations by **81%** while retaining **95%** of optimization gains. [TAVO]({{ '/projects/tavo/' | relative_url }}) and [TAC]({{ '/projects/tac/' | relative_url }}) focus on data selection and generalization under distribution shift, with TAVO outperforming the strongest fixed-selection baseline using just **12% of source data**. My work on RadOncGym and TAVO resulted in **two first-author papers accepted at WACV 2027**.
+At USC, advised by [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/), I led two research directions. [RadOncGym]({{ '/projects/radonc-gym/' | relative_url }}) explores when agents should use costly evaluations, reducing full evaluations by **81%** while retaining **95%** of optimization gains. [TAVO]({{ '/projects/tavo/' | relative_url }}) and [TAC]({{ '/projects/tac/' | relative_url }}) focus on data selection and generalization under distribution shift, with TAVO outperforming the strongest fixed-selection baseline using just **12% of source data**. My work on RadOncGym and TAVO resulted in **two first-author papers accepted at WACV 2027**.
 
 At **EGUOO Wellness**, I brought that same focus on reliability and efficiency into production, building a LangGraph agent with VLM-based label extraction, RAG, and persistent user context. The system improved valid recommendation success from **71% to 95%** while reducing cost per successful task by **35%**.
 
-Previously, I applied data-curation ideas to speech ML pipelines at **2 Cube Global** and worked on distributed-storage performance and reliability across a **60-node Linux environment** at **Xiaomi**.
-
-[CV (PDF)]({{ '/assets/pdf/cv.pdf' | relative_url }}) · [GitHub](https://github.com/francischen0724) · [LinkedIn](https://www.linkedin.com/in/xiwen-chen-franciscxw/) · [Email](mailto:xiwenc@usc.edu)
+Previously, I applied data-curation ideas to speech ML pipelines at [**2 Cube Global**]({{ '/projects/2-cube-speech-ai/' | relative_url }}) and worked on distributed-storage performance and reliability across a **60-node Linux environment** at [**Xiaomi**]({{ '/projects/xiaomi-storage/' | relative_url }}).
 
 ## Research Interests
 

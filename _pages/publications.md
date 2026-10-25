@@ -25,7 +25,7 @@ nav_order: 2
 
 ## Manuscripts
 
-Additional manuscripts, project reports, and a book chapter contribution.
+Additional research manuscripts, project reports, and a literature review.
 
 <div class="publications">
   <ol class="bibliography">

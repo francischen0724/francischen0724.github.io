@@ -11,7 +11,7 @@ category: research
 
 TAC studies how limited target supervision can guide both annotation decisions and training-set composition. It connects active learning with source-data curation, using cross-center medical image segmentation to evaluate learning under distribution shift.
 
-**Role:** First author, USC; advisor: Prof. Ruishan Liu.<br>
+**Role:** First author, USC; advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/).<br>
 **Status:** Manuscript under review at ICLR 2027. The anonymous repo is not available during peer review.
 
 ## The problem

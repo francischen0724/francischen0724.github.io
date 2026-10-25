@@ -11,9 +11,9 @@ category: research
 
 TAVO studies training-data selection under distribution shift: which examples should a learner use when it cannot train on everything? The framework learns a selection strategy for each target domain and data budget, evaluated on cross-center tumor segmentation and a cross-task classification control.
 
-**Role:** Co-first author, USC; advisor: Prof. Ruishan Liu.<br>
+**Role:** Co-first author, USC; advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/).<br>
 **Status:** Accepted to **WACV 2027**.<br>
-**Authors:** Xiwen Chen<sup>_</sup>, Tong Miao<sup>_</sup>, Yueqi Dong, Divya Rajparia, Sai Praneeth Karimireddy, and Ruishan Liu. \* Equal contribution.
+**Authors:** Xiwen Chen<sup>_</sup>, Tong Miao<sup>_</sup>, Yueqi Dong, Divya Rajparia, Sai Praneeth Karimireddy, and [Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/). \* Equal contribution.
 
 <div class="links">
   <a href="{{ '/assets/pdf/TAVO_WACV_2027_Camera_Ready.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="Read TAVO camera-ready PDF">PDF</a>

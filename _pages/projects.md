@@ -74,12 +74,24 @@ Co-led an end-to-end sketch-to-garment prototype connecting sketch vectorization
 **Focus:** Computer vision, multimodal workflows, layout optimization, and prototyping.<br>
 **Role:** Co-leader, January-May 2025.
 
-### Speech AI & Data Pipelines - 2 Cube Global
+### [Speech AI & Data Pipelines - 2 Cube Global]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
-Adapted F5-TTS and evaluated it against zero-shot Qwen3-TTS for multilingual notifications. Built Python/Librosa pipelines for **80+ hours of speech and 45K aligned utterances**, filtering 16% misaligned samples to support model adaptation and held-out evaluation.
+Adapted F5-TTS and evaluated it against zero-shot Qwen3-TTS for multilingual notifications. Built Python/Librosa pipelines for **80+ hours of speech and 45K aligned utterances**, filtering **16% misaligned samples** to support model adaptation and evaluation.
 
-### Distributed Storage Systems - Xiaomi
+**Focus:** Speech data quality, domain adaptation, and quality–cost evaluation.<br>
+**Tools:** Python, Librosa, F5-TTS, Qwen3-TTS.<br>
+**Role:** AI Engineer Intern, January–May 2026.
 
-Worked on erasure-coded storage across a **60-node Linux environment**, building reliability and failure-analysis workflows with **50+ client-I/O correctness scenarios**. Performance work covered eight coding baselines and 48 paired tests, improving encoding throughput by **81.5%**, end-to-end upload throughput by **22%**, and recovery latency by **12%**. Validation separated coding-library correctness from file I/O and failure recovery, covering **2KB-1GB workloads**.
+[Project details]({{ '/projects/2-cube-speech-ai/' | relative_url }})
+
+### [Distributed Storage Systems - Xiaomi]({{ '/projects/xiaomi-storage/' | relative_url }})
+
+Worked on erasure-coded storage across a **60-node Linux environment**, building reliability and failure-analysis workflows with **50+ client-I/O correctness scenarios**. Performance work covered eight coding baselines and 48 paired tests, improving encoding throughput by **81.5%**, end-to-end upload throughput by **22%**, and recovery latency by **12%**. Validation separated coding-library correctness from file I/O and failure recovery, covering **2KB–1GB workloads**.
+
+**Focus:** Distributed storage, erasure coding, reliability, and performance analysis.<br>
+**Tools:** C/C++, Bash, Linux, fio, GDB, Valgrind.<br>
+**Role:** Research Engineer Intern, May–September 2024.
+
+[Project details]({{ '/projects/xiaomi-storage/' | relative_url }})
 
 For experience details, see [Experience]({{ '/experience/' | relative_url }}) and my [CV]({{ '/cv/' | relative_url }}). For manuscript titles and status, see [Publications]({{ '/publications/' | relative_url }}).

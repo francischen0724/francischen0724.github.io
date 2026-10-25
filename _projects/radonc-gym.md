@@ -13,7 +13,7 @@ When feedback is expensive, an agent must decide both what to try and when a mor
 
 **Role:** Research lead and co-first author, Lab for ML, Health and Biomedicine, USC.<br>
 **Status:** Accepted to **WACV 2027**.<br>
-**Authors:** Tong Miao<sup>_</sup>, Shupeng Cheng<sup>_</sup>, Xiwen Chen<sup>\*</sup>, and Ruishan Liu. \* Equal contribution.
+**Authors:** Tong Miao<sup>_</sup>, Shupeng Cheng<sup>_</sup>, Xiwen Chen<sup>\*</sup>, and [Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/). \* Equal contribution.
 
 <div class="links">
   <a href="{{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="Read RadOncGym camera-ready PDF">PDF</a>
