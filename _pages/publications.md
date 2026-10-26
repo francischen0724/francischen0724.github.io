@@ -9,7 +9,9 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-Research manuscripts and publications. For methods, experiments, and engineering contributions, see [Projects]({{ '/projects/' | relative_url }}).
+**RadOncGym and TAVO are accepted to WACV 2027.** Camera-ready PDFs and public code are linked below. TAC is under review at ICLR 2027. For methods, experiments, and engineering contributions, see [Projects]({{ '/projects/' | relative_url }}).
+
+\* Equal contribution.
 
 <!-- Bibsearch Feature -->
 
@@ -23,7 +25,7 @@ Research manuscripts and publications. For methods, experiments, and engineering
 
 ## Manuscripts
 
-Additional manuscripts, project reports, and a book chapter contribution.
+Additional research manuscripts, project reports, and a literature review.
 
 <div class="publications">
   <ol class="bibliography">

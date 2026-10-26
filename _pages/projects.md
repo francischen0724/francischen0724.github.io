@@ -2,32 +2,46 @@
 layout: page
 title: projects
 permalink: /projects/
-description: agentic systems, data-centric learning, multimodal AI, and optimization under limited resources.
+description: full-stack AI platforms, agentic systems, data-centric learning, and multimodal AI.
 nav: true
 nav_order: 3
 ---
 
-I study how AI systems should allocate training data, labels, computation, and expensive evaluations. These projects connect method design with reproducible experiments and systems engineering.
+I build AI platforms and study how intelligent systems should allocate training data, labels, computation, and expensive evaluations. These projects connect method design with reproducible experiments and systems engineering.
+
+## [EGUOO Wellness: Full-Stack Agentic AI Platform]({{ '/projects/eguoo-wellness/' | relative_url }})
+
+Built and deployed a wellness platform with conversational assessments, persistent user profiles, and personalized recommendations. A **stateful LangGraph agent** combines visual label extraction, evidence-grounded RAG, and constraint-aware recommendations, backed by versioned profile updates and reliable asynchronous processing.
+
+**Result:** Across **60+ held-out scenarios**, constraint-valid recommendation success improved from **71% to 95%** versus a stateless LLM baseline, with **88% expert approval** and **35% lower inference cost per successful task**.
+
+**Focus:** Agentic AI, full-stack development, persistent state, and evaluation.<br>
+**Tools:** Next.js, FastAPI, PostgreSQL, AWS, Terraform, LangGraph.<br>
+**Role:** Software Engineer, September 2026–Present.
 
 ## [RadOncGym: Agentic Optimization Under Expensive Feedback]({{ '/projects/radonc-gym/' | relative_url }})
 
 When evaluating a decision is expensive, an agent must choose both its next action and when to pay for reliable feedback. I built an environment for this problem using radiotherapy dose-mimicking optimization as a testbed: agents tune **12 objective weights**, use fast surrogate feedback, and decide when to request a full Gurobi solve.
 
-**Result:** Across **600 contexts**, benchmarking against black-box optimization policies reduced full evaluations by **81%** while retaining **95% of downstream objective gains** under matched compute budgets. The evaluation also compares **nine agent configurations** spanning three memory mechanisms and three role structures.
+**Result:** Across **600 patient-prediction contexts**, the three-solve LLM agent outperforms evaluated non-agent methods under the same solve budget. It remains competitive with their 16-solve variants at **75.0–77.6% lower normalized runtime**. The paper also compares **nine memory and role configurations**.
 
 **Focus:** Agentic AI, evaluation, multi-fidelity optimization, and budget-aware decisions.<br>
 **Tools:** Python, Gymnasium, Gurobi, scikit-learn.<br>
-**Role:** Research lead and first author.
+**Role:** Research lead and co-first author. **Accepted to WACV 2027.**
+
+[PDF]({{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}) · [Code](https://github.com/miaot-usc/RadOncGym)
 
 ## [TAVO: Target-Aware Source Curation]({{ '/projects/tavo/' | relative_url }})
 
 Which training examples are useful for a particular target domain? TAVO combines **eight complementary signals** for target relevance, gradient compatibility, source coverage, and diversity, then learns target- and budget-specific combinations through validation-guided search. The resulting training subset leaves the downstream model, loss, and inference procedure unchanged.
 
-**Result:** Across held-out targets at a **12% source-data budget**, TAVO improves Dice by **1.9 points over fixed-selector baselines** and **2.2 points over domain-adaptation baselines**. The evaluation covers BraTS 2021 and MAMA-MIA, with OfficeHome as a cross-task classification control.
+**Result:** At a **150-case source budget**, TAVO improves target-averaged Dice over the strongest fixed selector by **1.0 points on BraTS 2021 and 1.9 on MAMA-MIA**, and over the strongest budget-matched adaptation baseline by **1.0 and 2.2 points**, respectively. OfficeHome provides a cross-task classification control.
 
 **Focus:** Data-centric ML, training-data curation, domain shift, and budget-aware optimization.<br>
 **Tools:** PyTorch, CUDA, EfficientViT, nnU-Net, ResNet-50.<br>
-**Role:** First author.
+**Role:** Co-first author. **Accepted to WACV 2027.**
+
+[PDF]({{ '/assets/pdf/TAVO_WACV_2027_Camera_Ready.pdf' | relative_url }}) · [Code](https://github.com/francischen0724/TAVO)
 
 ## [TAC: Target-Anchored Source-Target Curation]({{ '/projects/tac/' | relative_url }})
 
@@ -37,7 +51,7 @@ TAC connects two resource-allocation decisions: which target examples to annotat
 
 **Focus:** Active learning, source-target curation, data-efficient learning, and domain adaptation.<br>
 **Tools:** PyTorch, MONAI, CUDA.<br>
-**Role:** First author.
+**Role:** First author. **Under review at ICLR 2027.**
 
 ## Selected Engineering Work
 
@@ -60,12 +74,24 @@ Co-led an end-to-end sketch-to-garment prototype connecting sketch vectorization
 **Focus:** Computer vision, multimodal workflows, layout optimization, and prototyping.<br>
 **Role:** Co-leader, January-May 2025.
 
-### Speech AI & Data Pipelines - 2 Cube Global
+### [Speech AI & Data Pipelines - 2 Cube Global]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
-Adapted F5-TTS and evaluated it against zero-shot Qwen3-TTS for multilingual notifications. Built Python/Librosa pipelines for **80+ hours of speech and 45K aligned utterances**, filtering 16% misaligned samples to support model adaptation and held-out evaluation.
+Adapted F5-TTS and evaluated it against zero-shot Qwen3-TTS for multilingual notifications. Built Python/Librosa pipelines for **80+ hours of speech and 45K aligned utterances**, filtering **16% misaligned samples** to support model adaptation and evaluation.
 
-### Distributed Storage Systems - Xiaomi
+**Focus:** Speech data quality, domain adaptation, and quality–cost evaluation.<br>
+**Tools:** Python, Librosa, F5-TTS, Qwen3-TTS.<br>
+**Role:** AI Engineer Intern, January–May 2026.
 
-Worked on erasure-coded storage across a **60-node Linux environment**, building reliability and failure-analysis workflows with **50+ client-I/O correctness scenarios**. Performance work covered eight coding baselines and 48 paired tests, improving encoding throughput by **81.5%**, end-to-end upload throughput by **22%**, and recovery latency by **12%**. Validation separated coding-library correctness from file I/O and failure recovery, covering **2KB-1GB workloads**.
+[Project details]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
-For experience details, see my [CV]({{ '/cv/' | relative_url }}). For manuscript titles and status, see [Publications]({{ '/publications/' | relative_url }}).
+### [Distributed Storage Systems - Xiaomi]({{ '/projects/xiaomi-storage/' | relative_url }})
+
+Worked on erasure-coded storage across a **60-node Linux environment**, building reliability and failure-analysis workflows with **50+ client-I/O correctness scenarios**. Performance work covered eight coding baselines and 48 paired tests, improving encoding throughput by **81.5%**, end-to-end upload throughput by **22%**, and recovery latency by **12%**. Validation separated coding-library correctness from file I/O and failure recovery, covering **2KB–1GB workloads**.
+
+**Focus:** Distributed storage, erasure coding, reliability, and performance analysis.<br>
+**Tools:** C/C++, Bash, Linux, fio, GDB, Valgrind.<br>
+**Role:** Research Engineer Intern, May–September 2024.
+
+[Project details]({{ '/projects/xiaomi-storage/' | relative_url }})
+
+For experience details, see [Experience]({{ '/experience/' | relative_url }}) and my [CV]({{ '/cv/' | relative_url }}). For manuscript titles and status, see [Publications]({{ '/publications/' | relative_url }}).
