@@ -11,7 +11,7 @@ category: research
 
 When feedback is expensive, an agent must decide both what to try and when a more reliable evaluation is worth the cost. RadOncGym studies this decision using radiotherapy dose-mimicking optimization as a testbed, with controlled comparisons of agent behavior, memory, and evaluation budgets.
 
-**Role:** Research lead and co-first author, Lab for ML, Health and Biomedicine, USC.<br>
+**Role:** Research lead and co-first author, Keck School of Medicine, USC | Radiation Oncology.<br>
 **Status:** Accepted to **WACV 2027**.<br>
 **Authors:** Tong Miao<sup>_</sup>, Shupeng Cheng<sup>_</sup>, Xiwen Chen<sup>\*</sup>, and [Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/). \* Equal contribution.
 

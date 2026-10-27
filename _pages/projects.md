@@ -11,13 +11,15 @@ I build AI platforms and study how intelligent systems should allocate training 
 
 ## [EGUOO Wellness: Full-Stack Agentic AI Platform]({{ '/projects/eguoo-wellness/' | relative_url }})
 
-Built and deployed a wellness platform with conversational assessments, persistent user profiles, and personalized recommendations. A **stateful LangGraph agent** combines visual label extraction, evidence-grounded RAG, and constraint-aware recommendations, backed by versioned profile updates and reliable asynchronous processing.
+Owned the end-to-end development and AWS deployment of a wellness platform with conversational assessments, persistent user profiles, and personalized recommendations. A **stateful LangGraph agent** combines visual label extraction, evidence-grounded RAG, and constraint-aware recommendations, backed by versioned profile updates and reliable asynchronous processing.
 
-**Result:** Across **60+ held-out scenarios**, constraint-valid recommendation success improved from **71% to 95%** versus a stateless LLM baseline, with **88% expert approval** and **35% lower inference cost per successful task**.
+**Product results:** A **1,000-participant A/B test** improved completion rate from **43% to 78%** and reduced average completion time by **45%**.
+
+**Agent results:** Across **320 pilot recommendations**, the agent achieved **95% constraint validity**, **88% expert approval**, **2.2 s P95 latency**, and **35% lower inference cost per successful task** compared with a stateless LLM.
 
 **Focus:** Agentic AI, full-stack development, persistent state, and evaluation.<br>
 **Tools:** Next.js, FastAPI, PostgreSQL, AWS, Terraform, LangGraph.<br>
-**Role:** Software Engineer, September 2026–Present.
+**Role:** Software Engineer, May 2026–Present.
 
 ## [RadOncGym: Agentic Optimization Under Expensive Feedback]({{ '/projects/radonc-gym/' | relative_url }})
 
@@ -80,7 +82,7 @@ Adapted F5-TTS and evaluated it against zero-shot Qwen3-TTS for multilingual not
 
 **Focus:** Speech data quality, domain adaptation, and quality–cost evaluation.<br>
 **Tools:** Python, Librosa, F5-TTS, Qwen3-TTS.<br>
-**Role:** AI Engineer Intern, January–May 2026.
+**Role:** AI Engineer Intern, May–September 2025.
 
 [Project details]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
