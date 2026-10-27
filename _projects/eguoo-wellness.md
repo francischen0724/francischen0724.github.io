@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EGUOO Wellness
+title: American Best Life Inc.
 description: End-to-end development of an AI wellness platform, evaluated through a participant A/B test and pilot agent recommendations.
 img:
 importance: 1
@@ -9,7 +9,7 @@ category: engineering
 
 **From conversational assessments to persistent, personalized recommendations**
 
-At EGUOO Wellness, I owned development from the initial implementation through AWS deployment of a full-stack AI wellness platform. It connects conversational assessments, visual label extraction, and evidence-grounded recommendations with persistent user profiles.
+At American Best Life Inc., I owned development from the initial implementation through AWS deployment of a full-stack AI wellness platform. It connects conversational assessments, visual label extraction, and evidence-grounded recommendations with persistent user profiles.
 
 **Role:** Software Engineer | Full-Stack & Agentic AI.<br>
 **Dates:** May 2026–Present.<br>

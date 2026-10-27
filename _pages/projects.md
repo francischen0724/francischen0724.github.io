@@ -9,7 +9,7 @@ nav_order: 3
 
 I build AI platforms and study how intelligent systems should allocate training data, labels, computation, and expensive evaluations. These projects connect method design with reproducible experiments and systems engineering.
 
-## [EGUOO Wellness: Full-Stack Agentic AI Platform]({{ '/projects/eguoo-wellness/' | relative_url }})
+## [American Best Life Inc.: Full-Stack Agentic AI Platform]({{ '/projects/eguoo-wellness/' | relative_url }})
 
 Owned the end-to-end development and AWS deployment of a wellness platform with conversational assessments, persistent user profiles, and personalized recommendations. A **stateful LangGraph agent** combines visual label extraction, evidence-grounded RAG, and constraint-aware recommendations, backed by versioned profile updates and reliable asynchronous processing.
 
