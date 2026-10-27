@@ -12,7 +12,7 @@ category: engineering
 At 2 Cube Global, I worked on multilingual text-to-speech for supply-chain applications. My work connected data preparation with model adaptation and evaluation: turn domain recordings into usable training examples, adapt a speech model, and assess whether that adaptation was worthwhile compared with a zero-shot alternative.
 
 **Role:** AI Engineer Intern | ML Data Pipelines & Evaluation.<br>
-**Dates:** January–May 2026.<br>
+**Dates:** May–September 2025.<br>
 **Location:** Los Angeles, CA.
 
 ## The problem

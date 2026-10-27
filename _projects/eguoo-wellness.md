@@ -1,7 +1,7 @@
 ---
 layout: page
 title: EGUOO Wellness
-description: A full-stack AI platform with stateful agents, evidence-grounded retrieval, and personalized recommendation workflows.
+description: End-to-end development of an AI wellness platform, evaluated through a participant A/B test and pilot agent recommendations.
 img:
 importance: 1
 category: engineering
@@ -9,10 +9,10 @@ category: engineering
 
 **From conversational assessments to persistent, personalized recommendations**
 
-At EGUOO Wellness, I build a full-stack AI platform that connects conversational assessments, visual label extraction, and evidence-grounded recommendations with persistent user profiles.
+At EGUOO Wellness, I owned development from the initial implementation through AWS deployment of a full-stack AI wellness platform. It connects conversational assessments, visual label extraction, and evidence-grounded recommendations with persistent user profiles.
 
 **Role:** Software Engineer | Full-Stack & Agentic AI.<br>
-**Dates:** September 2026–Present.<br>
+**Dates:** May 2026–Present.<br>
 **Location:** Irvine, CA (Remote).
 
 ## The system
@@ -29,17 +29,27 @@ Recommendations depend on the current user profile, so reliable state handling i
 
 The work spans the user-facing application, backend services, agent orchestration, database, infrastructure, and evaluation.
 
-## Evaluation
+## Product evaluation
 
-I benchmarked the system against a **stateless LLM baseline across 60+ held-out scenarios**.
+A **1,000-participant A/B test** measured completion rate and average completion time for the platform.
 
-| Measure                                 | Result                          |
-| --------------------------------------- | ------------------------------- |
-| Constraint-valid recommendation success | **71% → 95%**                   |
-| Expert approval                         | **88%**                         |
-| Inference cost per successful task      | **35% lower than the baseline** |
+| Measure                 | Result        |
+| ----------------------- | ------------- |
+| Completion rate         | **43% → 78%** |
+| Average completion time | **45% lower** |
 
-The evaluation measures whether recommendations satisfy the stated constraints, whether experts approve them, and how much inference costs per successful task.
+## Agent evaluation
+
+I benchmarked the stateful agent against a **stateless LLM baseline on 320 pilot recommendations**, measuring recommendation validity, expert approval, latency, and inference cost.
+
+| Measure                            | Result                          |
+| ---------------------------------- | ------------------------------- |
+| Constraint validity                | **95%**                         |
+| Expert approval                    | **88%**                         |
+| P95 latency                        | **2.2 seconds**                 |
+| Inference cost per successful task | **35% lower than the baseline** |
+
+These agent results describe the pilot recommendation evaluation. The participant A/B test above measures the platform's completion outcomes.
 
 **Stack:** TypeScript, Next.js, Python, FastAPI, PostgreSQL, AWS, Terraform, LangGraph, VLMs, and RAG.
 

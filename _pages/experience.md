@@ -12,18 +12,18 @@ My work combines AI research, evaluation, and the engineering needed to put inte
 ## EGUOO Wellness
 
 **Software Engineer | Full-Stack & Agentic AI**<br>
-September 2026–Present · Irvine, CA (Remote)
+May 2026–Present · Irvine, CA (Remote)
 
-- Built and deployed a full-stack AI wellness platform using **Next.js, FastAPI, and PostgreSQL on AWS**, with Terraform infrastructure, conversational assessments, persistent profiles, and personalized recommendation workflows.
+- Owned the development and AWS deployment of a full-stack AI wellness platform using **Next.js, FastAPI, PostgreSQL, and Terraform**. A **1,000-participant A/B test** improved completion rate from **43% to 78%** and reduced average completion time by **45%**.
 - Architected a **stateful LangGraph agent** combining VLM-based label extraction, evidence-grounded RAG, and constraint-aware recommendations. Implemented versioned profile updates, optimistic concurrency, and idempotent asynchronous processing.
-- Evaluated against a stateless LLM baseline across **60+ held-out scenarios**: constraint-valid recommendation success improved from **71% to 95%**, expert approval reached **88%**, and inference cost per successful task fell by **35%**.
+- Benchmarked the agent against a stateless LLM on **320 pilot recommendations**, achieving **95% constraint validity**, **88% expert approval**, **2.2 s P95 latency**, and **35% lower inference cost per successful task**.
 
 [Project details]({{ '/projects/eguoo-wellness/' | relative_url }})
 
-## Lab for ML, Health and Biomedicine, USC
+## Keck School of Medicine, USC | Radiation Oncology
 
 **Research Lead | Agentic AI, Optimization & Evaluation**<br>
-May 2026–September 2026 · Los Angeles, CA<br>
+May 2025–October 2026 · Los Angeles, CA<br>
 Advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/)
 
 - Led development of **RadOncGym**, a Gymnasium-based framework for radiotherapy dose-mimicking optimization, integrating a Gurobi-backed simulator with **12 objective-weight variables**, multi-fidelity feedback, and budget-aware execution.
@@ -35,17 +35,17 @@ Advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/)
 ## 2 Cube Global
 
 **AI Engineer Intern | ML Data Pipelines & Evaluation**<br>
-January 2026–May 2026 · Los Angeles, CA
+May 2025–September 2025 · Los Angeles, CA
 
 - Built Python/Librosa curation and validation pipelines for **80+ hours of audio and transcripts**, producing **45K aligned utterances** and filtering **16% misaligned samples**.
 - Adapted **F5-TTS** for multilingual supply-chain speech and benchmarked against zero-shot **Qwen3-TTS**, evaluating quality and cost to inform technology selection.
 
 [Project details]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
-## University of Southern California
+## Lab for ML, Health and Biomedicine, USC
 
 **Research Assistant | Data-Centric ML & Training Data Curation**<br>
-September 2024–May 2026 · Los Angeles, CA<br>
+September 2024–May 2025 · Los Angeles, CA<br>
 Advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/)
 
 - Led **TAVO and TAC**, developing training-data curation methods that combine target-conditioned selection, multi-fidelity search, and active acquisition under distribution shift.
