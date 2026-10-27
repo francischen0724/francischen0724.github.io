@@ -9,7 +9,7 @@ nav_order: 4
 
 My work combines AI research, evaluation, and the engineering needed to put intelligent systems into practice. [Download my CV]({{ '/assets/pdf/cv.pdf' | relative_url }}) for a one-page overview.
 
-## EGUOO Wellness
+## American Best Life Inc.
 
 **Software Engineer | Full-Stack & Agentic AI**<br>
 May 2026–Present · Irvine, CA (Remote)
