@@ -16,7 +16,7 @@ May 2026–Present · Irvine, CA (Remote)
 
 - Owned the development and AWS deployment of a full-stack AI wellness platform using **Next.js, FastAPI, PostgreSQL, and Terraform**. A **1,000-participant A/B test** improved completion rate from **43% to 78%** and reduced average completion time by **45%**.
 - Architected a **stateful LangGraph agent** combining VLM-based label extraction, evidence-grounded RAG, and constraint-aware recommendations. Implemented versioned profile updates, optimistic concurrency, and idempotent asynchronous processing.
-- Benchmarked the agent against a stateless LLM on **320 pilot recommendations**, achieving **95% constraint validity**, **88% expert approval**, **2.2 s P95 latency**, and **35% lower inference cost per successful task**.
+- Benchmarked the agent against a stateless LLM on **320 pilot recommendations**, achieving **95% constraint validity** and **88% expert approval**; reduced **end-to-end P95 latency by 27% (66 s to 48 s)** and **inference cost per successful task by 35%**.
 
 [Project details]({{ '/projects/eguoo-wellness/' | relative_url }})
 

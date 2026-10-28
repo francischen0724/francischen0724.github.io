@@ -15,7 +15,7 @@ Owned the end-to-end development and AWS deployment of a wellness platform with 
 
 **Product results:** A **1,000-participant A/B test** improved completion rate from **43% to 78%** and reduced average completion time by **45%**.
 
-**Agent results:** Across **320 pilot recommendations**, the agent achieved **95% constraint validity**, **88% expert approval**, **2.2 s P95 latency**, and **35% lower inference cost per successful task** compared with a stateless LLM.
+**Agent results:** Across **320 pilot recommendations**, the agent achieved **95% constraint validity** and **88% expert approval** while reducing **end-to-end P95 latency by 27% (66 s to 48 s)** and **inference cost per successful task by 35%** compared with a stateless LLM.
 
 **Focus:** Agentic AI, full-stack development, persistent state, and evaluation.<br>
 **Tools:** Next.js, FastAPI, PostgreSQL, AWS, Terraform, LangGraph.<br>
