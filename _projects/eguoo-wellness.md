@@ -46,7 +46,7 @@ I benchmarked the stateful agent against a **stateless LLM baseline on 320 pilot
 | ---------------------------------- | ------------------------------- |
 | Constraint validity                | **95%**                         |
 | Expert approval                    | **88%**                         |
-| P95 latency                        | **2.2 seconds**                 |
+| End-to-end P95 latency             | **27% lower (66 s → 48 s)**     |
 | Inference cost per successful task | **35% lower than the baseline** |
 
 These agent results describe the pilot recommendation evaluation. The participant A/B test above measures the platform's completion outcomes.
