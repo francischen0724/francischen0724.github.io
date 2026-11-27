@@ -9,7 +9,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-**RadOncGym and TAVO are accepted to WACV 2027.** Camera-ready PDFs and public code are linked below. TAC is under review at ICLR 2027. For methods, experiments, and engineering contributions, see [Projects]({{ '/projects/' | relative_url }}).
+**RadOncGym and TAVO are accepted to WACV 2027.** Camera-ready PDFs and public code are linked below. For methods, experiments, and engineering contributions, see [Projects]({{ '/projects/' | relative_url }}).
 
 \* Equal contribution.
 

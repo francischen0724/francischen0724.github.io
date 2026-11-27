@@ -11,8 +11,9 @@ category: research
 
 TAC studies how limited target supervision can guide both annotation decisions and training-set composition. It connects active learning with source-data curation, using cross-center medical image segmentation to evaluate learning under distribution shift.
 
-**Role:** First author, USC; advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/).<br>
-**Status:** Manuscript under review at ICLR 2027. The anonymous repo is not available during peer review.
+I led this work as first author at USC under the supervision of [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/).
+
+**Under review at CVPR 2027.** [Read the preprint (PDF)]({{ '/assets/pdf/TAC_Preprint.pdf' | relative_url }}).
 
 ## The problem
 
@@ -24,11 +25,15 @@ Under a limited annotation budget, a learner must decide which target examples t
 
 TAC complements [TAVO]({{ '/projects/tavo/' | relative_url }}): TAVO uses a fixed labeled target support set to rank source cases, while TAC studies how target acquisition and source curation can work together.
 
-The workflow first selects target cases for annotation, then uses their labels to assess source reliability through representation similarity and gradient agreement. Target-anchored coverage expands the selected subset into relevant source regions, while redundancy control limits repetitive examples. The resulting source subset and acquired target cases feed the same downstream segmentation architecture, loss, and inference procedure used by the comparison methods.
+TAC first selects target cases for annotation using a weighted clustering scheme guided by prediction uncertainty, inconsistency, and stability. It then uses the annotated masks to estimate source reliability from distributional similarity, gradient agreement, and prototype compatibility. Reliability-weighted coverage selects a complementary source subset for training alongside the annotated target cases. TAC preserves the downstream segmentation architecture, loss, and inference procedure.
 
 ## Results
 
-In held-out-target experiments at a **12% source-data budget**, TAC improves Dice by **1.5 points over the strongest baseline** and **4.1 points over full-source training**. These comparisons evaluate whether joint source-target curation can improve generalization while using fewer source examples.
+In leave-one-center-out evaluations with 10 newly annotated target cases and 150 selected source cases, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**. It improves on the strongest matched-budget baselines by **1.8** and **1.9 Dice points**, respectively.
+
+## Coupled data curation
+
+_What to Label, What to Train On: Coupled Data Curation for Cross-Domain Medical Segmentation_ is a companion manuscript submitted to the Data4VFM Workshop at WACV 2027. It examines how the value of labeling a target case depends on which source cases enter training under the same budgets.
 
 ## My contribution
 

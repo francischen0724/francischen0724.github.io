@@ -49,11 +49,13 @@ Which training examples are useful for a particular target domain? TAVO combines
 
 TAC connects two resource-allocation decisions: which target examples to annotate, and which source examples to use for training. Newly queried target labels act as reliability anchors for constructing compact, target-aligned subsets under annotation constraints and distribution shift.
 
-**Result:** In held-out-target experiments at a **12% source-data budget**, TAC improves Dice by **1.5 points over the strongest baseline** and **4.1 points over full-source training**.
+**Result:** With 10 newly annotated target cases and 150 source cases, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**, gains of **1.8** and **1.9 Dice points** over the strongest matched-budget baselines, respectively.
 
 **Focus:** Active learning, source-target curation, data-efficient learning, and domain adaptation.<br>
 **Tools:** PyTorch, MONAI, CUDA.<br>
-**Role:** First author. **Under review at ICLR 2027.**
+**Role:** First author. **Under review at CVPR 2027.**
+
+[PDF]({{ '/assets/pdf/TAC_Preprint.pdf' | relative_url }})
 
 ## Selected Engineering Work
 

@@ -50,7 +50,7 @@ Advisor: [Prof. Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/)
 
 - Led **TAVO and TAC**, developing training-data curation methods that combine target-conditioned selection, multi-fidelity search, and active acquisition under distribution shift.
 - Built reproducible **multi-GPU PyTorch/CUDA pipelines with Slurm**, automated multi-budget experiments, and evaluated TAVO across BraTS 2021, MAMA-MIA, and OfficeHome.
-- **TAVO: accepted to WACV 2027 (co-first author). TAC: under review at ICLR 2027 (first author).**
+- **TAVO: accepted to WACV 2027 (co-first author). TAC: under review at CVPR 2027 (first author).**
 
 [TAVO]({{ '/projects/tavo/' | relative_url }}) · [TAC]({{ '/projects/tac/' | relative_url }})
 

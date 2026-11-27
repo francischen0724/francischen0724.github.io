@@ -3,3 +3,7 @@ cv_pdf: /assets/pdf/cv.pdf
 email: xiwenc@usc.edu
 github_username: francischen0724
 linkedin_username: xiwen-chen-franciscxw
+google_scholar:
+  title: Google Scholar
+  logo: ai ai-google-scholar
+  url: "https://scholar.google.com/citations?user=HDoueCAAAAAJ&hl=en"
