@@ -20,7 +20,7 @@ May 2026–Present · Irvine, CA (Remote)
 
 [Project details]({{ '/projects/eguoo-wellness/' | relative_url }})
 
-## Keck School of Medicine, USC | Radiation Oncology
+## Lab for ML, Health and Biomedicine, USC
 
 **Research Lead | Agentic AI, Optimization & Evaluation**<br>
 May 2025–October 2026 · Los Angeles, CA<br>
@@ -42,7 +42,7 @@ May 2025–September 2025 · Los Angeles, CA
 
 [Project details]({{ '/projects/2-cube-speech-ai/' | relative_url }})
 
-## Lab for ML, Health and Biomedicine, USC
+## University of Southern California
 
 **Research Assistant | Data-Centric ML & Training Data Curation**<br>
 September 2024–May 2025 · Los Angeles, CA<br>
