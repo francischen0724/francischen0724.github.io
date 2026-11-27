@@ -25,15 +25,17 @@ Under a limited annotation budget, a learner must decide which target examples t
 
 TAC complements [TAVO]({{ '/projects/tavo/' | relative_url }}): TAVO uses a fixed labeled target support set to rank source cases, while TAC studies how target acquisition and source curation can work together.
 
-TAC first selects target cases for annotation using a weighted clustering scheme guided by prediction uncertainty, inconsistency, and stability. It then uses the annotated masks to estimate source reliability from distributional similarity, gradient agreement, and prototype compatibility. Reliability-weighted coverage selects a complementary source subset for training alongside the annotated target cases. TAC preserves the downstream segmentation architecture, loss, and inference procedure.
+TAC uses predictions from a full-source warm-up checkpoint to select target cases for annotation. It clusters candidates using weights based on foreground-aware uncertainty, local prediction inconsistency, and prediction stability. It then estimates source reliability using distributional similarity to the acquired target cases, gradient agreement, and prototype compatibility. The last two signals use the acquired masks. Reliability-weighted coverage selects a source subset for final training alongside the annotated target cases. TAC preserves the downstream segmentation architecture, supervised loss, and inference procedure.
 
 ## Results
 
-In leave-one-center-out evaluations with 10 newly annotated target cases and 150 selected source cases, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**. It improves on the strongest matched-budget baselines by **1.8** and **1.9 Dice points**, respectively.
+With 10 acquired target masks and 150 selected source cases for final training, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**, averaged over four held-out targets per benchmark. It improves on CLUE + ORIENT by **1.8 Dice points** on BraTS 2021 and on MADA by **1.9 Dice points** on MAMA-MIA. At the same source budget with only two target masks, TAC falls below the strongest comparator on both benchmarks. Target validation annotations are used separately for checkpoint selection.
 
 ## Coupled data curation
 
-_What to Label, What to Train On: Coupled Data Curation for Cross-Domain Medical Segmentation_ is a companion manuscript submitted to the Data4VFM Workshop at WACV 2027. It examines how the value of labeling a target case depends on which source cases enter training under the same budgets.
+_What to Label, What to Train On: Coupled Data Curation for Cross-Domain Medical Segmentation_ is a companion manuscript submitted to the Data4VFM Workshop at WACV 2027. It examines how target acquisition and source selection interact. On BraTS 2021 at the same 10-target and 150-source budgets, replacing random acquisition with TAC acquisition lowers mean Dice by 0.61 points with random source selection and raises it by 2.20 points with TAC source selection.
+
+[Read the workshop manuscript (PDF)]({{ '/assets/pdf/Data4VFM_TAC.pdf' | relative_url }}).
 
 ## My contribution
 

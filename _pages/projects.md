@@ -45,11 +45,11 @@ Which training examples are useful for a particular target domain? TAVO combines
 
 [PDF]({{ '/assets/pdf/TAVO_WACV_2027_Camera_Ready.pdf' | relative_url }}) · [Code](https://github.com/francischen0724/TAVO)
 
-## [TAC: Target-Anchored Source-Target Curation]({{ '/projects/tac/' | relative_url }})
+## [TAC: Target-Anchored Coverage]({{ '/projects/tac/' | relative_url }})
 
 TAC connects two resource-allocation decisions: which target examples to annotate, and which source examples to use for training. Newly queried target labels act as reliability anchors for constructing compact, target-aligned subsets under annotation constraints and distribution shift.
 
-**Result:** With 10 newly annotated target cases and 150 source cases, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**, gains of **1.8** and **1.9 Dice points** over the strongest matched-budget baselines, respectively.
+**Result:** With 10 acquired target masks and 150 source cases for final training, TAC reaches **77.3% macro Dice on BraTS 2021** and **68.4% foreground Dice on MAMA-MIA**, gains of **1.8** and **1.9 Dice points** over the strongest matched-budget baselines, respectively.
 
 **Focus:** Active learning, source-target curation, data-efficient learning, and domain adaptation.<br>
 **Tools:** PyTorch, MONAI, CUDA.<br>
