@@ -5,20 +5,50 @@ description: Studying how agents allocate expensive evaluations under a fixed co
 img:
 importance: 1
 category: research
+toc:
+  sidebar: left
 ---
 
-**Agentic optimization under expensive feedback**
+<ul class="project-badges" aria-label="Project status">
+  <li>WACV 2027</li>
+  <li>Research lead · co-first author</li>
+  <li>Agentic AI</li>
+</ul>
 
-When feedback is expensive, an agent must decide both what to try and when a more reliable evaluation is worth the cost. RadOncGym studies this decision using radiotherapy dose-mimicking optimization as a testbed, with controlled comparisons of agent behavior, memory, and evaluation budgets.
+RadOncGym tests when an LLM agent can rely on fast feedback and when it should request a full radiotherapy planning solve.
+
+<div class="portfolio-actions">
+  <a class="portfolio-action portfolio-action-primary" href="{{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}" target="_blank" rel="noopener">RadOncGym paper (PDF)</a>
+  <a class="portfolio-action" href="https://github.com/miaot-usc/RadOncGym" target="_blank" rel="noopener">Code</a>
+</div>
+
+## Key results
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">Mean clinical-criterion violation</p>
+    <p class="project-metric-value">0.6131 Gy</p>
+    <p class="project-metric-delta">reduction vs. fixed-weight plan</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Normalized runtime vs. 16-solve variants</p>
+    <p class="project-metric-value">75.0–77.6%</p>
+    <p class="project-metric-delta">less, while remaining competitive</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Evaluation scale</p>
+    <p class="project-metric-value">600</p>
+    <p class="project-metric-delta">patient–prediction contexts</p>
+  </div>
+</div>
+
+Across **600 patient–prediction contexts**, the GPT-5.6 Sol agent used a budget of **three full solves in up to 16 turns** and reduced mean clinical-criterion violation by **0.6131 Gy** relative to a fixed-weight plan with all 12 weights set to 1.
+
+It outperformed all evaluated non-agent weight-tuning methods at the same solve budget. Against their **16-solve variants**, it remained competitive with **75.0–77.6% less normalized runtime**.
 
 **Role:** Research lead and co-first author, Lab for ML, Health and Biomedicine, USC.<br>
 **Status:** Accepted to **WACV 2027**.<br>
 **Authors:** Tong Miao<sup>\*</sup>, Shupeng Cheng<sup>\*</sup>, Xiwen Chen<sup>\*</sup>, and [Ruishan Liu](https://viterbi-web.usc.edu/~ruishanl/). \* Equal contribution.
-
-<div class="links">
-  <a href="{{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="Read RadOncGym camera-ready PDF">PDF</a>
-  <a href="https://github.com/miaot-usc/RadOncGym" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="RadOncGym code on GitHub">Code</a>
-</div>
 
 ## The problem
 
@@ -37,7 +67,7 @@ Built on OpenKBP-Opt and a Gurobi planning backend, the Gymnasium-based environm
 
 The evaluation framework compares **nine memory-role configurations**: three memory mechanisms crossed with direct-planner, evaluator-planner, and candidate-critic structures. Standardized interfaces, experiment orchestration, and trajectory logs support comparisons with numerical optimization methods.
 
-## Evaluation and results
+## Evaluation details {#evaluation-and-results}
 
 The camera-ready benchmark covers **60 OpenKBP head-and-neck patients**, each paired with **10 dose predictions**, for **600 patient-prediction contexts** per configuration. It compares LLM agents with numerical weight-tuning methods under explicit solve and turn budgets.
 
@@ -49,7 +79,7 @@ Under a **16-turn horizon and a three-solve budget**, the GPT-5.6 Sol agent with
 | DVH score                         | 0.5986 Gy reduction |
 | Dose score                        | 0.2204 Gy reduction |
 
-The agent outperforms all evaluated non-agent weight-tuning methods under the same three-solve budget. It remains competitive with their **16-solve variants while using 75.0–77.6% less normalized runtime**. The all-ones reference solve is excluded from the optimization solve budget.
+The all-ones reference solve is excluded from the optimization solve budget.
 
 The study also compares **nine memory and role configurations**. No configuration is best on every endpoint, and the paired comparisons do not establish a robust advantage for the critic role. The surrogate supplies screening feedback; final candidate selection uses successful full solves. See the [camera-ready paper]({{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}) for the full protocol and results.
 
@@ -57,6 +87,16 @@ The study also compares **nine memory and role configurations**. No configuratio
 
 I led the environment and evaluation framework: modular action/state interfaces, budget-aware experiment orchestration, multi-fidelity feedback, reproducible trajectory logging, and end-to-end model evaluation. I also implemented and compared memory and role configurations to examine where agent decisions succeed or fail.
 
-**Stack:** Python, Gymnasium, Gurobi, scikit-learn, LLM agents, surrogate modeling, and reproducible evaluation pipelines.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>Python</li>
+  <li>Gymnasium</li>
+  <li>Gurobi</li>
+  <li>scikit-learn</li>
+  <li>LLM agents</li>
+  <li>Surrogate modeling</li>
+  <li>Reproducible evaluation pipelines</li>
+</ul>
 
 [Camera-ready PDF]({{ '/assets/pdf/RadOncGym_WACV_2027_Camera_Ready.pdf' | relative_url }}) · [Code](https://github.com/miaot-usc/RadOncGym) · [All projects]({{ '/projects/' | relative_url }})

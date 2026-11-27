@@ -5,7 +5,14 @@ description: A sketch-to-garment prototype combining computer vision, multimodal
 img:
 importance: 5
 category: engineering
+toc:
+  sidebar: left
 ---
+
+<ul class="project-badges" aria-label="Project status">
+  <li class="project-badge-muted">Co-leader · January-May 2025</li>
+  <li>Computer vision</li>
+</ul>
 
 **Sustainable Fashion AI Design Studio**
 
@@ -14,6 +21,22 @@ I co-led a student project exploring an AI-assisted sketch-to-garment workflow. 
 **Role:** Co-leader.<br>
 **Dates:** January-May 2025.<br>
 **Status:** Research and engineering prototype.
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">Net fabric consumption</p>
+    <p class="project-metric-value">29.97% reduction</p>
+    <p class="project-metric-delta">10-piece bin-packing example</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Reusable share of leftover area</p>
+    <p class="project-metric-value">71.79% → 84.21%</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Processing time</p>
+    <p class="project-metric-value">5.41 seconds</p>
+  </div>
+</div>
 
 ## The problem
 
@@ -50,6 +73,15 @@ The repository also includes an experimental Gym environment and Stable-Baseline
 
 **Focus:** Computer vision, multimodal understanding, structured outputs, geometric optimization, and prototype development.
 
-**Stack:** Python, OpenCV, scikit-image, Shapely, SVG/PDF generation; Gym and Stable-Baselines3 for the RL exploration.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>Python</li>
+  <li>OpenCV</li>
+  <li>scikit-image</li>
+  <li>Shapely</li>
+  <li>SVG/PDF generation</li>
+  <li>Gym and Stable-Baselines3 for the RL exploration</li>
+</ul>
 
 [Repository (private; access required)](https://github.com/faraaz-usc/ZeroWasteFashionAI) · [All projects]({{ '/projects/' | relative_url }})

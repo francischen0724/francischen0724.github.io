@@ -5,7 +5,14 @@ description: Curating domain speech data and evaluating adaptation versus zero-s
 img:
 importance: 4
 category: engineering
+toc:
+  sidebar: left
 ---
+
+<ul class="project-badges" aria-label="Project status">
+  <li class="project-badge-muted">AI Engineer Intern · May–September 2025</li>
+  <li>Speech AI</li>
+</ul>
 
 **From paired audio and transcripts to a practical model comparison**
 
@@ -14,6 +21,21 @@ At 2 Cube Global, I worked on multilingual text-to-speech for supply-chain appli
 **Role:** AI Engineer Intern | ML Data Pipelines & Evaluation.<br>
 **Dates:** May–September 2025.<br>
 **Location:** Los Angeles, CA.
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">Paired audio and transcripts processed</p>
+    <p class="project-metric-value">80+ hours</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Aligned utterances produced</p>
+    <p class="project-metric-value">45K</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Misaligned samples filtered</p>
+    <p class="project-metric-value">16%</p>
+  </div>
+</div>
 
 ## The problem
 
@@ -49,6 +71,13 @@ The evaluation informed technology selection by considering speech quality along
 - Adapted F5-TTS and benchmarked it against a zero-shot Qwen3-TTS baseline.
 - Evaluated quality–cost trade-offs to inform the team's technology choice.
 
-**Stack:** Python, Librosa, F5-TTS, and Qwen3-TTS.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>Python</li>
+  <li>Librosa</li>
+  <li>F5-TTS</li>
+  <li>Qwen3-TTS</li>
+</ul>
 
 [Experience]({{ '/experience/' | relative_url }}) · [All projects]({{ '/projects/' | relative_url }})

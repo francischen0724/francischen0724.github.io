@@ -5,7 +5,14 @@ description: Transferring structured visual reasoning from an 11B teacher to a 2
 img:
 importance: 4
 category: research
+toc:
+  sidebar: left
 ---
+
+<ul class="project-badges" aria-label="Project status">
+  <li class="project-badge-muted">Team project</li>
+  <li>Multimodal learning</li>
+</ul>
 
 **Distilling small vision-language models with structured reasoning**
 
@@ -13,6 +20,24 @@ This team project studies whether structured explanations from a larger vision-l
 
 **My contribution:** Method design, data processing, and final evaluation.<br>
 **Status:** Team project with a technical report and public code.
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">Distilled Moondream (2B) accuracy</p>
+    <p class="project-metric-value">53.54%</p>
+    <p class="project-metric-delta">+7.34 percentage points over the base student</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">LLaVA-CoT teacher (11B) accuracy</p>
+    <p class="project-metric-value">78.82%</p>
+    <p class="project-metric-delta">image-containing ScienceQA test subset</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Training examples</p>
+    <p class="project-metric-value">2,000</p>
+    <p class="project-metric-delta">single A100 80GB GPU</p>
+  </div>
+</div>
 
 ## The problem
 
@@ -43,6 +68,15 @@ Distillation improves the student's accuracy by **7.34 percentage points**. The 
 
 The report documents cases where the generated rationale identifies the correct answer but the final option is wrong. This makes answer extraction and rationale-answer consistency useful evaluation targets alongside overall accuracy. Performance also varies by topic; broader datasets and stronger controls would be needed to establish generalization beyond this experiment.
 
-**Stack:** Python, PyTorch, Hugging Face Transformers, ScienceQA, LLaVA-CoT, and Moondream.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>Python</li>
+  <li>PyTorch</li>
+  <li>Hugging Face Transformers</li>
+  <li>ScienceQA</li>
+  <li>LLaVA-CoT</li>
+  <li>Moondream</li>
+</ul>
 
 [Code](https://github.com/yqlu1015/vllm_distillation) · [Project report](https://github.com/yqlu1015/vllm_distillation/blob/main/svrd.pdf) · [All projects]({{ '/projects/' | relative_url }})

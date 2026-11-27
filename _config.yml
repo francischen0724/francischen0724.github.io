@@ -10,11 +10,13 @@ contact_note:
 description: >
   Xiwen Chen: software engineer and ML researcher building agentic AI systems, full-stack applications, and data-efficient learning methods. Co-first author of RadOncGym and TAVO, accepted to WACV 2027.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  <span class="footer-links"><a href="mailto:xiwenc@usc.edu">Email</a>
+  <a href="https://github.com/francischen0724" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.linkedin.com/in/xiwen-chen-franciscxw" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://scholar.google.com/citations?user=HDoueCAAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a></span>
 keywords: Xiwen Chen, machine learning, software engineering, agentic AI, full-stack, LangGraph, RAG, data-centric ML, evaluation, American Best Life Inc., RadOncGym, TAVO, TAC, WACV 2027
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://francischen0724.github.io
 baseurl:
@@ -82,7 +84,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
@@ -96,9 +98,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://francischen0724.github.io/assets/img/og-card.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -174,15 +176,15 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false # theme demo content, not published
   news:
     defaults:
       layout: post
-    output: true
+    output: false # theme demo content, not published
   projects:
     output: true
   teachings:
-    output: true
+    output: false # theme demo content, not published
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -227,6 +229,16 @@ exclude:
   - gems/
   - migrations/
   - vendor
+  # Theme demo content and repository files that should not be published.
+  - _posts/
+  - _books/
+  - _news/
+  - _teachings/
+  - AGENTS.md
+  - CLAUDE.md
+  - requirements.txt
+  - test/
+  - output/
 keep_files:
   - CNAME
   - .nojekyll
@@ -452,7 +464,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: true # enables displaying social links in the navbar on the about page
+enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position

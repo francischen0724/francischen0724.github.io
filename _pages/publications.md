@@ -23,11 +23,11 @@ nav_order: 2
 
 </div>
 
-## Manuscripts
+<section class="pub-manuscripts-section" aria-labelledby="manuscripts">
+<h2 id="manuscripts">Manuscripts</h2>
+<p>Additional research manuscripts, project reports, and a literature review.</p>
 
-Additional research manuscripts, project reports, and a literature review.
-
-<div class="publications">
+<div class="publications pub-manuscripts">
   <ol class="bibliography">
     {% for manuscript in site.data.manuscripts %}
     <li>
@@ -48,12 +48,10 @@ Additional research manuscripts, project reports, and a literature review.
           <div class="periodical"><em>{{ manuscript.status | escape }}</em></div>
           {% if manuscript.note %}<div class="periodical">{{ manuscript.note | escape }}</div>{% endif %}
           <div class="links">
-            <a href="{{ manuscript.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="Read PDF: {{ manuscript.title | escape }}">
-              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF
+            <a href="{{ manuscript.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="Read PDF: {{ manuscript.title | escape }}"> PDF
             </a>
             {% if manuscript.code %}
-            <a href="{{ manuscript.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="GitHub repository: {{ manuscript.title | escape }}{% if manuscript.code_private %} (access required){% endif %}">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> {% if manuscript.code_private %}Code (private){% else %}Code{% endif %}
+            <a href="{{ manuscript.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" aria-label="GitHub repository: {{ manuscript.title | escape }}{% if manuscript.code_private %} (access required){% endif %}"> {% if manuscript.code_private %}Code (private){% else %}Code{% endif %}
             </a>
             {% endif %}
           </div>
@@ -63,3 +61,4 @@ Additional research manuscripts, project reports, and a literature review.
     {% endfor %}
   </ol>
 </div>
+</section>

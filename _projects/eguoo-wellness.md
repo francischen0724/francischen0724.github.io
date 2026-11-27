@@ -5,7 +5,14 @@ description: End-to-end development of an AI wellness platform, evaluated throug
 img:
 importance: 1
 category: engineering
+toc:
+  sidebar: left
 ---
+
+<ul class="project-badges" aria-label="Project status">
+  <li class="project-badge-muted">Software Engineer · May 2026–Present</li>
+  <li>Full-Stack &amp; Agentic AI</li>
+</ul>
 
 **From conversational assessments to persistent, personalized recommendations**
 
@@ -14,6 +21,24 @@ At American Best Life Inc., I owned development from the initial implementation 
 **Role:** Software Engineer | Full-Stack & Agentic AI.<br>
 **Dates:** May 2026–Present.<br>
 **Location:** Irvine, CA (Remote).
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">1,000-participant A/B test</p>
+    <p class="project-metric-value">43% → 78%</p>
+    <p class="project-metric-delta">completion rate</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Constraint validity · 320 pilot recommendations</p>
+    <p class="project-metric-value">95%</p>
+    <p class="project-metric-delta">vs. stateless LLM baseline</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">End-to-end P95 latency</p>
+    <p class="project-metric-value">27% lower</p>
+    <p class="project-metric-delta">66 s → 48 s</p>
+  </div>
+</div>
 
 ## The system
 
@@ -51,6 +76,19 @@ I benchmarked the stateful agent against a **stateless LLM baseline on 320 pilot
 
 These agent results describe the pilot recommendation evaluation. The participant A/B test above measures the platform's completion outcomes.
 
-**Stack:** TypeScript, Next.js, Python, FastAPI, PostgreSQL, AWS, Terraform, LangGraph, VLMs, and RAG.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>TypeScript</li>
+  <li>Next.js</li>
+  <li>Python</li>
+  <li>FastAPI</li>
+  <li>PostgreSQL</li>
+  <li>AWS</li>
+  <li>Terraform</li>
+  <li>LangGraph</li>
+  <li>VLMs</li>
+  <li>RAG</li>
+</ul>
 
 [Experience]({{ '/experience/' | relative_url }}) · [All projects]({{ '/projects/' | relative_url }})

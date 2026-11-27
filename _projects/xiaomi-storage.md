@@ -5,7 +5,14 @@ description: Integrating erasure-coded storage, validating correctness and recov
 img:
 importance: 5
 category: engineering
+toc:
+  sidebar: left
 ---
+
+<ul class="project-badges" aria-label="Project status">
+  <li class="project-badge-muted">Research Engineer Intern · May–September 2024</li>
+  <li>Distributed systems</li>
+</ul>
 
 **Connecting coding performance with system reliability**
 
@@ -14,6 +21,21 @@ At Xiaomi, I worked on the enterprise **NCDSS distributed-storage system**, inte
 **Role:** Research Engineer Intern | Distributed Systems & Cloud Infrastructure.<br>
 **Dates:** May–September 2024.<br>
 **Location:** Beijing & Shenzhen, China.
+
+<div class="project-metrics">
+  <div class="project-metric">
+    <p class="project-metric-label">Encoding throughput</p>
+    <p class="project-metric-value">81.5% higher</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">End-to-end upload throughput</p>
+    <p class="project-metric-value">22% higher</p>
+  </div>
+  <div class="project-metric">
+    <p class="project-metric-label">Recovery latency</p>
+    <p class="project-metric-value">12% lower</p>
+  </div>
+</div>
 
 ## System integration
 
@@ -54,6 +76,17 @@ These measurements distinguish component throughput from end-to-end throughput a
 - Compared coding implementations and investigated performance bottlenecks across the storage stack.
 - Recorded benchmark results and documented deployment and test procedures.
 
-**Stack:** C/C++, Bash, Linux, NCDSS, erasure coding, fio, GDB, and Valgrind.
+**Stack**
+
+<ul class="project-stack" aria-label="Stack">
+  <li>C/C++</li>
+  <li>Bash</li>
+  <li>Linux</li>
+  <li>NCDSS</li>
+  <li>Erasure coding</li>
+  <li>fio</li>
+  <li>GDB</li>
+  <li>Valgrind</li>
+</ul>
 
 [Experience]({{ '/experience/' | relative_url }}) · [All projects]({{ '/projects/' | relative_url }})
